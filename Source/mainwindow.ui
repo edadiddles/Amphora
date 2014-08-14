@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1397</width>
+    <height>998</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1397</width>
+    <height>998</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Amphora Simulation</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>1397</width>
+     <height>977</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="layoutLeftColumn">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="layoutVariables">
+        <item>
+         <widget class="QGroupBox" name="ParaboloidBox">
+          <property name="minimumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Paraboloid</string>
+          </property>
+          <widget class="QLabel" name="labelParaboloidCoefficients">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Coefficients</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputParaboloidCoefficientsX">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="statusTip">
+            <string/>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="accessibleDescription">
+            <string/>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="text">
+            <string>0.0170794</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputParaboloidCoefficientsY">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>0.0170794</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputParaboloidCoefficientsZ">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelParaboloidAngle">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Angle</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputParaboloidAngle">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>70</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>45</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="inputParaboloidAngleUnits">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>71</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>deg</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>rad</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="SlicingPlaneBox">
+          <property name="minimumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Slicing Plane</string>
+          </property>
+          <widget class="QLabel" name="labelSlicingPlaneHeight">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Height</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputSlicingPlaneHeight">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>150</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelSlicingPlaneAngle">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Angle</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputSlicingPlaneAngle">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>70</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>30</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="inputSlicingPlaneAngleUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>70</y>
+             <width>91</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>deg</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>rad</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="inputSlicingPlaneHeightUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>30</y>
+             <width>91</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>m</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>in</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ft</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="PhoneBox">
+          <property name="minimumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Phone</string>
+          </property>
+          <widget class="QLabel" name="labelPhoneModel">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Model</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelPhoneAngle">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Angle</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputPhoneAngle">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>70</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="inputPhoneAngleUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>70</y>
+             <width>91</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>deg</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>rad</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="inputPhoneModel">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>181</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>iPhone 4S</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>iPhone 5</string>
+            </property>
+           </item>
+          </widget>
+          <zorder>labelPhoneModel</zorder>
+          <zorder>labelPhoneAngle</zorder>
+          <zorder>inputPhoneAngleUnits</zorder>
+          <zorder>inputPhoneModel</zorder>
+          <zorder>inputPhoneAngle</zorder>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="UserBox">
+          <property name="minimumSize">
+           <size>
+            <width>371</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>User</string>
+          </property>
+          <widget class="QLabel" name="labelUserRadius">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Radius</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputUserRadius">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>1000</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="inputUserRadiusUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>30</y>
+             <width>81</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>m</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>in</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ft</string>
+            </property>
+           </item>
+          </widget>
+          <zorder>labelUserRadius</zorder>
+          <zorder>inputUserRadiusUnits</zorder>
+          <zorder>inputUserRadius</zorder>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="ResolutionBox">
+          <property name="minimumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>371</width>
+            <height>111</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Resolution</string>
+          </property>
+          <widget class="QLabel" name="labelResolutionLinear">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Linear</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputResolutionLinear">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>30</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>0.5</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelResolutionAngular">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Angular</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="inputResolutionAngular">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>70</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>0.1</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="inputResolutionAngularUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>70</y>
+             <width>81</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>rad</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>deg</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="inputResolutionLinearUnits">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>30</y>
+             <width>81</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>mm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>cm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>m</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>in</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ft</string>
+            </property>
+           </item>
+          </widget>
+          <zorder>inputResolutionAngular</zorder>
+          <zorder>inputResolutionAngularUnits</zorder>
+          <zorder>inputResolutionLinearUnits</zorder>
+          <zorder>labelResolutionLinear</zorder>
+          <zorder>inputResolutionLinear</zorder>
+          <zorder>labelResolutionAngular</zorder>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="layoutButtons">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QPushButton" name="buttonClose">
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>121</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Close</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonRunSimulation">
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>121</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Run Simulation</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Simulation" name="simulation" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>991</width>
+        <height>901</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>1</width>
+        <height>1</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1397</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_Simulation"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menuProperties">
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionProperties"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionRun_Simulation"/>
+    <addaction name="actionSave_Image_As"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuProperties"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionProperties">
+   <property name="text">
+    <string>Properties</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt...</string>
+   </property>
+  </action>
+  <action name="actionAbout_Simulation">
+   <property name="text">
+    <string>About Simulation...</string>
+   </property>
+  </action>
+  <action name="actionSave_Image_As">
+   <property name="text">
+    <string>Save Image As...</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionRun_Simulation">
+   <property name="text">
+    <string>Run Simulation</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Simulation</class>
+   <extends>QWidget</extends>
+   <header>simulation.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>inputParaboloidCoefficientsX</tabstop>
+  <tabstop>inputParaboloidCoefficientsY</tabstop>
+  <tabstop>inputParaboloidCoefficientsZ</tabstop>
+  <tabstop>inputParaboloidAngle</tabstop>
+  <tabstop>inputParaboloidAngleUnits</tabstop>
+  <tabstop>inputSlicingPlaneHeight</tabstop>
+  <tabstop>inputSlicingPlaneHeightUnits</tabstop>
+  <tabstop>inputSlicingPlaneAngle</tabstop>
+  <tabstop>inputSlicingPlaneAngleUnits</tabstop>
+  <tabstop>inputPhoneModel</tabstop>
+  <tabstop>inputPhoneAngle</tabstop>
+  <tabstop>inputPhoneAngleUnits</tabstop>
+  <tabstop>inputUserRadius</tabstop>
+  <tabstop>inputUserRadiusUnits</tabstop>
+  <tabstop>inputResolutionLinear</tabstop>
+  <tabstop>inputResolutionLinearUnits</tabstop>
+  <tabstop>inputResolutionAngular</tabstop>
+  <tabstop>inputResolutionAngularUnits</tabstop>
+  <tabstop>buttonRunSimulation</tabstop>
+  <tabstop>buttonClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonRunSimulation</sender>
+   <signal>clicked()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>838</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>797</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputPhoneAngle</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>154</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>469</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputUserRadius</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputResolutionLinear</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>640</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputResolutionAngular</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>739</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>707</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputSlicingPlaneAngle</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputSlicingPlaneHeight</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputParaboloidAngle</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputParaboloidCoefficientsX</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputParaboloidCoefficientsY</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputParaboloidCoefficientsZ</sender>
+   <signal>returnPressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonRunSimulation</sender>
+   <signal>pressed()</signal>
+   <receiver>simulation</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>838</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>462</x>
+     <y>869</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

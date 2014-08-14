@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\paraboloid.o
+./debug\phone.o
+./debug\user.o
+./debug\simulation.o
+./debug\MatrixMath.o
+./debug\Amphora.o
+./debug\properties.o
+./debug\background.o
+./debug\aboutsimulation.o
+./debug\moc_mainwindow.o
+./debug\moc_simulation.o
+./debug\moc_properties.o
+./debug\moc_aboutsimulation.o
+);

@@ -12,8 +12,9 @@ TARGET = Amphora_Simulation
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
+SOURCES += \
+    main.cpp\
+    mainwindow.cpp \
     paraboloid.cpp \
     phone.cpp \
     user.cpp \
@@ -24,7 +25,8 @@ SOURCES += main.cpp\
     background.cpp \
     aboutsimulation.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
+    mainwindow.h \
     paraboloid.h \
     phone.h \
     user.h \
@@ -35,7 +37,11 @@ HEADERS  += mainwindow.h \
     background.h \
     aboutsimulation.h
 
-FORMS    += mainwindow.ui \
+LIBS += \
+    -lopengl32
+
+FORMS    += \
+    mainwindow.ui \
     properties.ui \
     aboutsimulation.ui
 
